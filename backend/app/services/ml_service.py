@@ -232,7 +232,7 @@ def compute_fragility_analysis(
     nodes: List[Dict[str, Any]],
     edges: List[Dict[str, Any]],
     iterations: int = 3,
-    damping: float = 0.35,
+    damping: float = 0.85,
 ) -> Dict[str, Dict[str, Any]]:
     """
     Compute fragility scores and structural explanations.
@@ -321,7 +321,7 @@ def compute_fragility_scores(
     nodes: List[Dict[str, Any]],
     edges: List[Dict[str, Any]],
     iterations: int = 3,
-    damping: float = 0.35,
+    damping: float = 0.85,
 ) -> Dict[str, float]:
     """
     Backward-compatible public API.
